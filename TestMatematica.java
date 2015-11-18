@@ -8,8 +8,12 @@ public class TestMatematica{
 		//leemos el numero entero
 		System.out.println("Escribe un numero");
 		int numero = sc.nextInt();
-		boolean calculo=Matematica.esPar(numero);
-		System.out.println("el numero : "+numero+ " es " +calculo);
-		System.out.printf("%s %d %s %b %n","El numero",numero,"es par: ",Matematicas.esPar(numero));
+		boolean calculo1=Matematica.esPar(numero);
+		boolean calculo2=Matematica.esDivisiblePorTres(numero);
+		boolean calculo3=Matematica.esDivisiblePorCinco(numero);
+		
+		System.out.println("el numero : "+numero+ " es " +calculo1);
+		System.out.println("el numero : "+numero+ " es " +calculo2);
+		System.out.println("el numero : "+numero+ " es " +calculo3);
 	}
 }
